@@ -1,29 +1,30 @@
 #include <iostream>
 using namespace std;
 int main()
-{ double liczba10; // liczba z u³amkiem dziesiêtnym
- double ulamek;
+{ double liczba9; 
+ double ulamek1;
     int n;
     int t[10]={0};
-    int u[100]={0}; //na ulamek binarny
+    int u[100]={0}; 
     int i=9;
-cout<<"Podaj liczbe";
-cin>>liczba10; //wczytanie liczby z ulamkiem
-//cin>>n;
-n=(int) liczba10; //pobieramy czesc calkowita
-ulamek=liczba10 - n; // czesc ulamkowa
-while(n>0){ //petla do czesci calkowitej
+cout<<"Podaj liczbe:";
+cin>>liczba9; 
+
+n=(int) liczba9; 
+ulamek1=liczba9 - n; 
+while(n>0){ 
     t[i]=n%2;
     n=n/2;
     i--;}
-for(int i=0; i<100; i++){ //petla dla czesci ulamkowej
-    ulamek=2*ulamek;
-if(ulamek>=1) {u[i]=1; ulamek=ulamek-1;}
+for(int i=0; i<100; i++){ 
+    ulamek1=2*ulamek1;
+if(ulamek1>=1) {u[i]=1; ulamek1=ulamek1-1;}
     else u[i]=0;
 }
-cout<<"binarnie to:";
+cout<<"binarnie:";
 for(i=0;i<10;i++)cout<<t[i];
 cout<<".";
 for(i=0;i<100;i++)cout<<u[i];
+cout<<"aksbjafihbiwfcbcfiqfijbfibqfeoiubfqwoibfwoubqwf ";
     return 0;
 }
