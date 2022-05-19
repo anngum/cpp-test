@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 int main()
-{ double liczba10; // liczba z u³amkiem dziesiêtnym
+{ double liczba10; // liczba z uÅ‚amkiem dziesiÄ™tnym
  double ulamek;
     int n;
     int t[10]={0};
@@ -26,4 +26,4 @@ for(i=0;i<10;i++)cout<<t[i];
 cout<<".";
 for(i=0;i<100;i++)cout<<u[i];
     return 0;
-}
+}ad,mv
